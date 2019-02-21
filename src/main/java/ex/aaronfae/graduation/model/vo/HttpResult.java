@@ -5,8 +5,8 @@ import ex.aaronfae.graduation.constant.HttpStatusConsts;
 /**
  * HTTP结果封装
  * 
- * @author Louis
- * @date Oct 29, 2018
+ * @author AaronFae
+ * 
  */
 public class HttpResult {
 

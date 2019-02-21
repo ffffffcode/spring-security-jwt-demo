@@ -10,6 +10,12 @@ import org.springframework.security.web.authentication.WebAuthenticationDetailsS
 
 import ex.aaronfae.graduation.configuration.security.JwtAuthenticatioToken;
 
+/**
+ * 安全工具类
+ * 
+ * @author AaronFae
+ *
+ */
 public class SecurityUtils {
 
 	/**

@@ -11,6 +11,7 @@ import ex.aaronfae.graduation.model.vo.HttpResult;
  * 用户控制器
  * 
  * @author AaronFae
+ * 
  */
 @RestController
 @RequestMapping("user")

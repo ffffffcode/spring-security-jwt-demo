@@ -4,6 +4,7 @@ package ex.aaronfae.graduation.entity;
  * 用户实体类
  * 
  * @author AaronFae
+ * 
  */
 public class User {
 

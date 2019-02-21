@@ -9,6 +9,12 @@ import org.springframework.stereotype.Service;
 import ex.aaronfae.graduation.entity.User;
 import ex.aaronfae.graduation.service.UserService;
 
+/**
+ * 用户服务接口实现类
+ * 
+ * @author AaronFae
+ *
+ */
 @Service
 public class UserServiceImpl implements UserService {
 

@@ -4,6 +4,12 @@ import java.util.Set;
 
 import ex.aaronfae.graduation.entity.User;
 
+/**
+ * 用户服务接口
+ * 
+ * @author AaronFae
+ *
+ */
 public interface UserService {
 
 	/**

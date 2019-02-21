@@ -15,11 +15,13 @@ import ex.aaronfae.graduation.model.vo.HttpResult;
 import ex.aaronfae.graduation.model.vo.LoginVO;
 import ex.aaronfae.graduation.util.SecurityUtils;
 
-@RestController
 /**
  * 登录控制器
  *
+ * @author AaronFae
+ *
  */
+@RestController
 public class LoginController {
 
 	@Autowired

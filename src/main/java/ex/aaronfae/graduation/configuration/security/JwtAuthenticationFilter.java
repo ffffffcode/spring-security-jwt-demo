@@ -16,6 +16,8 @@ import ex.aaronfae.graduation.util.SecurityUtils;
 /**
  * 登录认证检查过滤器
  *
+ * @author AaronFae
+ *
  */
 public class JwtAuthenticationFilter extends BasicAuthenticationFilter {
 

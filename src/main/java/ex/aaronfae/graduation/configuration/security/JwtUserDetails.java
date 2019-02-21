@@ -9,6 +9,7 @@ import org.springframework.security.core.userdetails.User;
  * 安全用户模型
  * 
  * @author AaronFae
+ * 
  */
 public class JwtUserDetails extends User {
 

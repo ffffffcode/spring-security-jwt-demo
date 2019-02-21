@@ -21,6 +21,7 @@ import ex.aaronfae.graduation.configuration.security.JwtAuthenticationProvider;
  * 认证配置
  * 
  * @author AaronFae
+ * 
  */
 @Configuration
 @EnableWebSecurity
