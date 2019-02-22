@@ -60,6 +60,15 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 				UsernamePasswordAuthenticationFilter.class);
 	}
 
+	/**
+	 * Gets the {@link AuthenticationManager} to use. The default strategy is if
+	 * {@link #configure(AuthenticationManagerBuilder)} method is overridden to use
+	 * the {@link AuthenticationManagerBuilder} that was passed in. Otherwise,
+	 * autowire the {@link AuthenticationManager} by type.
+	 *
+	 * @return
+	 * @throws Exception
+	 */
 	@Bean
 	@Override
 	public AuthenticationManager authenticationManager() throws Exception {

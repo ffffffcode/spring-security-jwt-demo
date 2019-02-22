@@ -43,7 +43,7 @@ public class JwtTokenUtils implements Serializable {
 	/**
 	 * 密钥
 	 */
-	private static final String SECRET = "abcdefgh";
+	private static final String SECRET = "af.graduation";
 	/**
 	 * 有效期12小时
 	 */
@@ -126,7 +126,8 @@ public class JwtTokenUtils implements Serializable {
 				}
 				authentication = new JwtAuthenticatioToken(username, null, authorities, token);
 			} else {
-				if (validateToken(token, SecurityUtils.getUsername())) {
+
+				if (validateToken(token)) {
 					// 如果上下文中Authentication非空，且请求令牌合法，直接返回当前登录认证信息
 					authentication = SecurityUtils.getAuthentication();
 				}
@@ -158,9 +159,14 @@ public class JwtTokenUtils implements Serializable {
 	 * @param username
 	 * @return
 	 */
-	public static Boolean validateToken(String token, String username) {
-		String userName = getUsernameFromToken(token);
-		return (userName.equals(username) && !isTokenExpired(token));
+	public static Boolean validateToken(String token) {
+		// 获取token中的用户名，瞎几把乱填的token获取到的用户名可能为空，这里要做非空处理
+		String usernameOfToken = getUsernameFromToken(token);
+		String username = SecurityUtils.getUsername();
+		if (usernameOfToken != null && username != null) {
+			return (usernameOfToken.equals(username) && !isTokenExpired(token));
+		}
+		return Boolean.FALSE;
 	}
 
 	/**
